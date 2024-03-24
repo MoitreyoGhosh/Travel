@@ -25,4 +25,26 @@
 --smaller-font-size: .75rem;
 
 /*Font weight*/
+--font-regular: 400;
+--font-medium: 500;
+--fon-semi-bold: 600;
+
+/*z index*/
+--z-tooltip: 10;
+--z-fixed: 100;
 }
+
+/*Responsive typography*/
+@media screen and (min-width:1152px){
+    :root{
+        --biggest-font-size: 5.5rem;
+        --h1-font-size: 2.5rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smallest-font-size: .813rem;
+    }
+}
+
+/*BASE*/
