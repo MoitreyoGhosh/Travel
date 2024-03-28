@@ -63,3 +63,30 @@ body,button,input{
     font-size: var(--norma-font-size);
     color: var(--text-color);
 }
+/*HEADER AND NAV*/
+.header{
+    position:fixed;
+    width: 100%;
+    background-color: transparent;
+    top:0;
+    left:0;
+    z-index: var(--z-fixed);
+}
+.nav{
+    height: var(--height-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo{
+    color: var(--title-color);
+    font-family:var(--second-font);
+    font-width: var(--font-semi-bold);
+}
+.nav__toggle,
+.nav__close{
+    display:flex;
+    font-size:1.50rem;
+    color: var(--title-color);
+    cursor: pointer;
+}
