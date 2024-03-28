@@ -80,7 +80,7 @@ body,button,input{
 .nav__logo{
     color: var(--title-color);
     font-family:var(--second-font);
-    font-width: var(--font-semi-bold);
+    font-weight: var(--font-semi-bold);
 }
 .nav__toggle,
 .nav__close{
