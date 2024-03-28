@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600&family=Poppins:wght@400;500&display=swap');
 /*VARIABLE CSS*/
 :root{
-    --header-height: 3.5rem;
+--header-height: 3.5rem;
 /*Colors*/
 /*Color mode HSL*/
 --title-color: hsl(0,0%,95%);
@@ -26,7 +26,7 @@
 /*Font weight*/
 --font-regular: 400;
 --font-medium: 500;
---fon-semi-bold: 600;
+--font-semi-bold: 600;
 
 /*z index*/
 --z-tooltip: 10;
@@ -62,7 +62,64 @@ body,button,input{
     font-size: var(--norma-font-size);
     color: var(--text-color);
 }
+
+body{
+    background-color: var(--body-color);
+}
+
+button,input{
+    outline: none;
+    border: none;
+}
+
+h1,h2,h3,h4{
+    color: var(--title-color);
+    font-family: var(--second-font);
+    font-weight: var(--font-semi-bold);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*REUSABLE CSS CLASSES*/
+
+.container{
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section{
+    padding-block: 5rem 1rem;
+}
+
+.section__title{
+    text-align: center;
+    font-size: var(--h1-font-size);
+    margin-bottom:1.5rem;
+}
+
+.main{ 
+    overflow: hidden; /*for Animation ScrollReveal */
+}
+
 /*HEADER AND NAV*/
+
 .header{
     position:fixed;
     width: 100%;
@@ -72,7 +129,7 @@ body,button,input{
     z-index: var(--z-fixed);
 }
 .nav{
-    height: var(--height-height);
+    height: var(--header-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -85,7 +142,45 @@ body,button,input{
 .nav__toggle,
 .nav__close{
     display:flex;
-    font-size:1.50rem;
+    font-size:1.25rem;
     color: var(--title-color);
     cursor: pointer;
+}
+/*Navigation for mobile devices*/
+@media screen and (max-width: 1023px){
+    .nav__menu{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        background-color: hsla(0,0%,0%,.3);
+        width: 100%;
+        padding-block: 4rem;
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);/*For safari*/
+        transition: top .4s;
+    }
+}
+
+.nav__list{
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+
+.nav__link{
+    color: var(--title-color);
+    font-family: var(--second-font);
+    font-weight: var(--font-medium);
+}
+
+.nav__close{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+
+}
+
+.show-menu{
+    top: 0;
 }
