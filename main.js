@@ -29,8 +29,6 @@ const linkAction = () =>{
 }
 navLink.forEach( n => n.addEventListener('click', linkAction))
 
-
-
 /*Add blur to the header */
 const blurHeader = () =>{
     const header = documrnt.getElementById('header')
