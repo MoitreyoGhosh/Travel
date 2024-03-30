@@ -426,6 +426,51 @@ img{
 }
 
 
+/*JOIN*/
+.join__container{
+    row-gap: 3rem;
+    padding-bottom: 2.5rem;
+
+}
+.join__data{
+    text-align: center;
+}
+.join__description{
+    margin-bottom: 2rem;
+}
+.join__form{
+    display: grid;
+    row-gap: 2.5rem;
+}
+.join__input{
+    padding: 1.25rem 1rem;
+    background-color: var(--container-color);
+}
+.join__input{
+    cursor: pointer;
+}
+.join__image{
+    position: relative;
+    justify-self: center;
+    overflow: hidden;
+}
+.join__img{
+    width: 300px;
+    transition: transform .4s;
+}
+.join__shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg,
+                 hsla(0, 0% 0% 0)50%,
+                 hsl(0, 0% 0%)125%);
+}
+.join__image:hover .join__img{
+    transform: scale(1,2);
+}
 
 
 
@@ -544,3 +589,4 @@ img{
         column-gap: 4rem;
     }
 }
+
