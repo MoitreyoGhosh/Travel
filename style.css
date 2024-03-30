@@ -169,10 +169,25 @@ img{
 }
 
 .nav__link{
+
     color: var(--title-color);
     font-family: var(--second-font);
     font-weight: var(--font-medium);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .nav__close{
     position: absolute;
@@ -299,6 +314,10 @@ img{
     left: 0;
     z-index: -1;
 }
+
+
+
+
 /*ABOUT*/
 .about__comtainer{
     row-gap: 3rem;
@@ -534,6 +553,42 @@ img{
 .join__image:hover .join__img{
     transform: scale(1,2);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*BREAKPOINTS*/
