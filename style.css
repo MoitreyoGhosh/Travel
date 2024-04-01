@@ -506,10 +506,12 @@ img{
 .footer{
     padding-block: 2.5rem;
     background-color: var(--container-color);
+    text-align: center;
 }
 
 .footer__content{
     row-gap: 3.5rem;
+    justify-content: center;
 }
 .footer__logo{
     display: inline-block;
@@ -522,6 +524,7 @@ img{
 .footer__data{
     grid-template-columns: repeat(2,max-content);
     gap:2.5rem 3.5rem;
+    justify-content: center;
 }
 .footer__title{
     font-size:var(--h3-font-size);
@@ -611,7 +614,7 @@ img{
    } 
    
   .footer__data{
-    grid-template-columns: (2, max-content); /*max-content*/
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /*max-content*/
    }
 }
 /*For medium devices*/
@@ -624,7 +627,7 @@ img{
         justify-content: center;
     }
 
-    .footer__data{
+  .footer__data {
         grid-template-columns: repeat(2, max-content);
     }
 }
