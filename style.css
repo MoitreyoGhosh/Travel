@@ -582,6 +582,11 @@ img{
 ::-webkit-scrollbar-thumb:hover{
     background-color: hsl(0,0%,30%);
 }
+
+.card-title{
+    color: var(--title-color);
+    }
+    
 /*------SCROLL UP-----*/
 .scrollup{
     position: fixed;
