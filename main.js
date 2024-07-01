@@ -30,11 +30,15 @@ const linkAction = () =>{
 navLink.forEach( n => n.addEventListener('click', linkAction))
 
 /*Add blur to the header */
-const blurHeader = () => {
-    const header = document.getElementById('header');
-    window.scrollY >= 50 ? header.classList.add('blur-header') : header.classList.remove('blur-header');
-}
-window.addEventListener('scroll',blurHeader)  
+const header = document.querySelector('header');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+
 
 /*----show scroll up----*/
 const scrollUp = () => {
